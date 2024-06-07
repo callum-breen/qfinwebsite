@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Quantitative Finance UWA | Events</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">QFin UWA</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="whoweare.html">Who We Are</a></li>
+						<li>
+							<a href="#">What We Do</a>
+							<ul>
+								<li><a href="events.html">Events</a></li>
+								<li><a href="tradingteam.html">Trading Team</a></li>
+							</ul>
+						</li>
+						<li><a href="careers.html">Careers</a></li>
+						<li><a href="index.html#four">Sponsors</a></li>
+						<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe1Oa86AZUAFVYuxAVOhucMVhko4dj4pugoFEVMUkL2U7CE6Q/viewform?usp=sf_link" class="button primary">Join Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Events</h2>
+							<p>Workshops | Networking | Game Theory | Technology</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<a class="image fit"><img src="images/panelnight.png" alt="" /></a>
+								
+								<!-- Dropdown Menu for Events -->
+								<select id="eventSelector" onchange="displayEvents()">
+									<option value="upcoming">Upcoming Events</option>
+									<option value="past">Past Events</option>
+								</select>
+
+								<div id="events">
+									<!-- Placeholder for Upcoming Events -->
+									<div id="upcomingEvents">
+										<p>Details of upcoming events will be displayed here.</p>
+									</div>
+									
+									<!-- Placeholder for Past Events -->
+									<div id="pastEvents" style="display: none;">
+										<p>Details of past events will be displayed here.</p>
+									</div>
+								</div>
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <ul>
+                        <li><a href="https://discord.gg/6yumBEMMCe" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+                        <li><a href="https://www.facebook.com/QFinUWA/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.linkedin.com/company/qfin-uwa/mycompany/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://www.instagram.com/qfinuwa/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/QFinUWA" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto:qfinuwa@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2024 Quantitative Finance UWA</li><li>Developed by Callum Breen</li>
+                </ul>
+            </footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function displayEvents() {
+					var selector = document.getElementById('eventSelector');
+					var upcomingEvents = document.getElementById('upcomingEvents');
+					var pastEvents = document.getElementById('pastEvents');
+					
+					if (selector.value === 'upcoming') {
+						upcomingEvents.style.display = 'block';
+						pastEvents.style.display = 'none';
+					} else {
+						upcomingEvents.style.display = 'none';
+						pastEvents.style.display = 'block';
+					}
+				}
+			</script>
+	</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<!--
+    Landed by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Quantitative Finance UWA | Who We Are</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .team-member {
+                text-align: center;
+            }
+            .team-member img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+            .team-member h4 {
+                margin: 10px 0 5px;
+            }
+            .team-member p {
+                margin: 0;
+            }
+            .team-member a {
+                display: block;
+                margin-top: 10px;
+                text-decoration: none;
+                color: #0077b5; /* LinkedIn blue color */
+            }
+            .year-select {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+                <header id="header">
+                    <h1 id="logo"><a href="index.html">QFin UWA</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="whoweare.html">Who We Are</a></li>
+                            <li>
+                                <a href="#">What We Do</a>
+                                <ul>
+									<li><a href="events.html">Events</a></li>
+									<li><a href="tradingteam.html">Trading Team</a></li>
+								</ul>
+                            </li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="index.html#four">Sponsors</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe1Oa86AZUAFVYuxAVOhucMVhko4dj4pugoFEVMUkL2U7CE6Q/viewform?usp=sf_link" class="button primary">Join Us</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+            <!-- Main -->
+                <div id="main" class="wrapper style1">
+                    <div class="container">
+                        <header class="major">
+                            <h2>Who We Are</h2>
+                        </header>
+                        <div class="row gtr-150">
+                            <div class="col-4 col-12-medium">
+
+                                <!-- Sidebar -->
+                                    <section id="sidebar">
+                                        <section>
+                                            <h3>Our Mission</h3>
+                                            <p>QFin was founded in 2021 with three core objectives in mind:</p>
+                                            <ul>
+                                                <li>To provide a platform for interested individuals to get practical
+                                                    experience in the field of algorithmic and statistical trading.</li>
+                                                <li>To demystify the quantitative finance industry and help prepare
+                                                    students for a career in the industry.</li>
+                                                <li>To create an inclusive environment for students with common
+                                                    interests to meet one another.</li>
+                                            </ul>
+                                        </section>
+                                        <hr />
+                                        <section>
+                                            <h3>Our Success</h3>
+                                            <ul>
+                                                <li>Fostered a collaborative community with students from various universities across Western Australia.</li>
+                                                <li>Sponsored by five leading trading firms in the Asia-Pacific region.</li>
+                                                <li>Won Best New Club at the 2021 UWA Student Guild Societies Council Awards.</li>
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                            </div>
+                            <div class="col-8 col-12-medium imp-medium">
+
+                                <!-- Content -->
+                                    <section id="content">
+                                        <h3>Meet the Team</h3>
+                                        <label for="year-select">Select Year:</label>
+                                        <select id="year-select" class="year-select" onchange="loadTeamData()">
+                                            <option value="2024">2024</option>
+                                            <option value="2023">2023</option>
+                                        </select>
+                                        <div class="team-grid" id="team-grid">
+                                            <!-- Team members will be loaded here -->
+                                        </div>
+                                    </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <ul>
+                        <li><a href="https://discord.gg/6yumBEMMCe" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+                        <li><a href="https://www.facebook.com/QFinUWA/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.linkedin.com/company/qfin-uwa/mycompany/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://www.instagram.com/qfinuwa/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/QFinUWA" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto:qfinuwa@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2024 Quantitative Finance UWA</li><li>Developed by Callum Breen</li>
+                </ul>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+                const teamData = {
+                    "2024": [
+                        { name: "Sithum Somarathna", title: "President", photo: "images/sithumsomarathna.jpeg", linkedin: "https://www.linkedin.com/in/sithumsomarathna/" },
+                        { name: "Callum Breen", title: "Vice President", photo: "assets/images/bob.jpg", linkedin: "https://www.linkedin.com/in/callum-breen-a59472231/?originalSubdomain=au" },
+                        { name: "Ben Fels", title: "Treasurer", photo: "images/benfels.jpeg", linkedin: "https://www.linkedin.com/in/ben-fels/?originalSubdomain=au" },
+                        { name: "Chloe Chang", title: "Secretary", photo: "images/chloechang.jpeg", linkedin: "https://www.linkedin.com/in/chloetychang/?originalSubdomain=au" },
+                        { name: "Zachary Cheng", title: "Director of Trading", photo: "images/zacharycheng.jpeg", linkedin: "https://www.linkedin.com/in/zachary-cheng-19a395212/?originalSubdomain=au" },
+                        { name: "Djimon Jayasundera", title: "Director of Technology", photo: "images/djimonjaysundera.jpeg", linkedin: "https://www.linkedin.com/in/djayasundera/?originalSubdomain=au" },
+                    ],
+                    "2023": [
+                        { name: "Zachary Ching", title: "President", photo: "images/zacharyching.jpeg", linkedin: "https://www.linkedin.com/in/zachary-ching-647a8318b/" },
+                        { name: "Lucas Siciliano", title: "Vice President", photo: "images/lucassiciliano.jpeg", linkedin: "https://www.linkedin.com/in/lucas-siciliano-234b4a252/" },
+                        { name: "Luke Osborne", title: "Treasurer", photo: "images/lukeosborne.jpeg", linkedin: "https://www.linkedin.com/in/lukeosborneau/" },
+                        { name: "Lachlan Reedy", title: "Secretary", photo: "images/lachlanreedy.jpeg", linkedin: "https://www.linkedin.com/in/lachlan-reedy/?originalSubdomain=au" },
+                        { name: "Isaac Bergl", title: "Director of Trading", photo: "images/isaacbergl.jpeg", linkedin: "https://www.linkedin.com/in/isaac-bergl-2531b81b5/?originalSubdomain=au" },
+                    ]
+                };
+
+                function loadTeamData() {
+                    const year = document.getElementById("year-select").value;
+                    const teamGrid = document.getElementById("team-grid");
+                    teamGrid.innerHTML = "";
+
+                    teamData[year].forEach(member => {
+                        const memberDiv = document.createElement("div");
+                        memberDiv.className = "team-member";
+
+                        const img = document.createElement("img");
+                        img.src = member.photo;
+                        img.alt = `${member.name}'s photo`;
+
+                        const name = document.createElement("h4");
+                        name.textContent = member.name;
+
+                        const title = document.createElement("p");
+                        title.textContent = member.title;
+
+                        const linkedin = document.createElement("a");
+                        linkedin.href = member.linkedin;
+                        linkedin.target = "_blank";
+                        linkedin.textContent = "LinkedIn";
+
+                        memberDiv.appendChild(img);
+                        memberDiv.appendChild(name);
+                        memberDiv.appendChild(title);
+                        memberDiv.appendChild(linkedin);
+                        teamGrid.appendChild(memberDiv);
+                    });
+                }
+
+                document.addEventListener("DOMContentLoaded", () => {
+                    loadTeamData();
+                });
+            </script>
+    </body>
+</html>
